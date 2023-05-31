@@ -4,6 +4,7 @@ console.log(`JS OK`)
 // Costante che contiene qualche email
 
 const userEmails =  [`andrea@libero.it` , `pippo@libero.it` , `pluto@libero.it` , `paperino@libero.it`];
+console.log(userEmails)
 
 // Elementi presi dal DOM
 
@@ -11,26 +12,26 @@ const buttonElement = document.getElementById(`btn`)
 
 // Inserisco il bottone in ascolto al click
 buttonElement.addEventListener(`click` , function(){
-    const emailElement = document.getElementById(`email`)
+    const emailElement = document.getElementById(`email`).value
 
-    let email = ``;
-    
     const textElement = document.getElementById(`text`)
+    
+    // Dati preliminari
+    let message = `non puoi entrare`;
+    
 
-    let message = ``
     // Ciclo di ripetizione e verifica
-
     for(let i = 0 ; i < userEmails.length ; i++){
-        email = (userEmails[i]);
+        let email =(userEmails[i]);
         // Verifica
-        console.log(emailElement);
+        console.log(emailElement.value);
         // Possibilità
-        if(emailElement.value != email){
-            console.log(`non puoi entrare`)
-        }else{
-            console.log(`puoi entrare`)
-        }
+        if(emailElement === email){
+            message = `puoi entrare`;
+        };
     };
+
     textElement.innerText = message
 });
+
 
