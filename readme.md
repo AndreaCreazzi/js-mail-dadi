@@ -41,7 +41,10 @@ programma così come lo faremmo "a mano"
 ## Scaletta Mail
 
 1. Creo un array che contenga qualche email.
-2. Interpello l'utente chiedendogli quale sia la sua email.
-3. inserisco un ciclo che vada a controllare l'array se l'email è presente.
-4. **SE** non è presente riceverà un messaggio di non accesso
-5. **ALTRIMENTI SE** è presento riceverà un messaggio di benvenuto
+1. (Prendo gli elementi dal DOM)
+1. Interpello l'utente chiedendogli quale sia la sua email.
+1. Inserisco il bottone in ascolto al click
+1. inserisco un ciclo che vada a controllare l'array se l'email è presente.
+1. **SE** non è presente riceverà un messaggio di non accesso
+1. **ALTRIMENTI SE** è presento riceverà un messaggio di benvenuto
+1. Inseirsco gli elementi nel DOM
