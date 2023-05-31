@@ -48,3 +48,11 @@ programma così come lo faremmo "a mano"
 1. **SE** non è presente riceverà un messaggio di non accesso
 1. **ALTRIMENTI SE** è presento riceverà un messaggio di benvenuto
 1. Inseirsco gli elementi nel DOM
+
+## Scaletta Dadi
+
+1. Recupero l'elemento nel DOM
+1. Generare un numero da 1 a 6 per l'user
+1. Generare un numero da 1 a 6 per il cumputer
+1. stabilisco il vincitore tra il computer o l'user
+1. stampo nel DOM
